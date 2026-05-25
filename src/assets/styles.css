@@ -1,0 +1,59 @@
+/* 全局样式 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Element Plus 样式覆盖 */
+.el-form-item__label {
+  font-weight: bold;
+  color: #333;
+}
+
+.el-input__inner {
+  border-radius: 4px;
+}
+
+.el-select .el-input__inner {
+  border-radius: 4px;
+}
+
+.el-button--primary {
+  background-color: #409EFF;
+  border-color: #409EFF;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #409EFF;
+  border-color: #409EFF;
+}
+
+.el-divider {
+  margin: 15px 0;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+  .career-selectors {
+    flex-direction: column;
+  }
+  
+  .career-selectors .el-select {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  
+  .payer-type-selector {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .payer-type-selector .el-input {
+    margin-left: 0 !important;
+    margin-top: 10px;
+    width: 100% !important;
+  }
+}
